@@ -17,11 +17,11 @@ if (defined('VERSION')) {
     defined('version') OR die('Direct access is not allowed.');
 }
 
-$Wcms->addListener('js', 'loadSummerNoteJS');
-$Wcms->addListener('css', 'loadSummerNoteCSS');
-$Wcms->addListener('editable', 'initialSummerNoteVariables');
+$Wcms->addListener('js', 'loadSummerNoteAirJS');
+$Wcms->addListener('css', 'loadSummerNoteAirCSS');
+$Wcms->addListener('editable', 'initialSummerNoteAirVariables');
 
-function initialSummerNoteVariables($contents) {
+function initialSummerNoteAirVariables($contents) {
     global $Wcms;
     $content = $contents[0];
     $subside = $contents[1];
@@ -41,7 +41,7 @@ function initialSummerNoteVariables($contents) {
     return array($content, $subside);
 }
 
-function loadSummerNoteJS($args) {
+function loadSummerNoteAirJS($args) {
     global $Wcms;
     if ($Wcms->loggedIn) {
         $script = <<<EOT
@@ -54,7 +54,7 @@ EOT;
     return $args;
 }
 
-function loadSummerNoteCSS($args) {
+function loadSummerNoteAirCSS($args) {
     global $Wcms;
     if ($Wcms->loggedIn) {
         $script = <<<EOT
