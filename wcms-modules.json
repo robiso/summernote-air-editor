@@ -1,0 +1,13 @@
+{
+    "version": 1,
+    "plugins": {
+        "summernote-air-editor": {
+            "name": "Summernote Air Editor",
+            "repo": "https://github.com/robiso/summernote-air-editor/tree/master",
+            "zip": "https://github.com/robiso/summernote-air-editor/archive/master.zip",
+            "summary": "Floating version of the summernote editor. Editor becomes visible only after selecting text with your cursor.",
+            "version": "3.2.0",
+            "image": "https://raw.githubusercontent.com/robiso/summernote-air-editor/master/preview.jpg"
+        }
+    }
+}
